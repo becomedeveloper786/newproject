@@ -36,7 +36,7 @@ const HomePage = () => {
         <button>Shop for Badminton Shoes Today</button>
         </div>
         <div className="hero-right">
-          <img src="../../../shoes.png" alt="shoes" />
+          <img src="../../assets/shoes.png" alt="shoes" />
         </div>
       </section>
     </section>
