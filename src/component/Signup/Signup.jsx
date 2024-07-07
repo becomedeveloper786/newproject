@@ -72,7 +72,7 @@ const Signup = () => {
         <div className="progress-bar" style={{ width: `${(strength / 5) * 100}%` }} />
         <form id="register-form" onSubmit={handleSubmit}>
           <div className="logo1">
-            <img src="../../../logo.png" alt="Logo" />
+            <img src="../../assets/logo.png" alt="Logo" />
           </div>
           <h1>Registration Form</h1>
           <label htmlFor="username">Username:</label>
