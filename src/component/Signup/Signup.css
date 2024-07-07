@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+ 
+  .webcontainer {
+    background: url("../../assets/bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  .registration-form {
+    animation: changeBackground 2s infinite alternate;
+    transition: background 2s ease;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    height: 500px;
+    position: relative;
+  }
+  
+  @keyframes changeBackground {
+    0%, 100% {
+      background: linear-gradient(to bottom, rgb(194, 23, 23), rgb(59, 57, 57));
+    }
+    50% {
+      background: linear-gradient(to bottom, rgb(59, 57, 57), rgb(194, 23, 23));
+    }
+  }
+  
+  .logo1 {
+    margin-bottom: 20px;
+  }
+  
+  
+  .logo1 img {
+    width: 100px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    color:black;
+  }
+  
+  button {
+    background: red;
+    border: none;
+    color: white;
+    padding: 15px 30px; 
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkred;
+  }
+  
+  #password-strength {
+    height: 5px;
+    width: 100%;
+    background: red;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background: green;
+    transition: width 0.3s;
+  }
+  
+  #message {
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .notification-success, .notification-error {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .notification-error {
+    background-color: red;
+  }
+  
